@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almacenar Datos del Formulario</title>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+
+    <form id="myForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Obtener los valores del formulario
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Almacenar los datos
+            const data = {
+                name: name,
+                email: email,
+                message: message
+            };
+
+            // Aquí puedes hacer lo que necesites con los datos
+            // Por ejemplo, enviarlos a un servidor o guardarlos en el almacenamiento local
+
+            // Mostrar los datos almacenados en la consola
+            console.log(data);
+        });
+    </script>
+</body>
+
+</html>

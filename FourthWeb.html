@@ -1,0 +1,204 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourthdimensioon</title>
+
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" href="./Images/tumblr_c5b6e8a7bdce870cc559621adb20231a_df38d287_400.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="j"> Historia</a></li>
+                <li><a href="j">armas</a></li>
+                <li id="Logo">
+                    <h2>Wiki</h2>
+                    <h1>HU TAO</h1>
+                </li>
+                <li><a href="j">artefactos </a></li>
+                <li><a href="j">equipos </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="Banner">
+        <img src="Images\darin-shana-asset.jpg" alt="f" id="Banneri">
+    </div>
+
+
+
+    <Div class="centrar espacio">
+        <h1 class="title">¿En qué te puedo ayudar?
+        </h1>
+        <p>¿Eh? ¿Acaso no sabes que <em> soy Hu Tao, la 77.ª directora de la Funeraria El Camino </em>? Veo que tienes
+            un aspecto muy jovial y una buena salud. No has venido por temas <strong> relacionados con mi trabajo,
+                ¿cierto? </strong></p>
+    </Div>
+
+    <div id="lista">
+        <div id="listaT">
+            <h1 class="title">Contenido WIki</h1>
+            <ul>
+                <li>Historia hu tao</li>
+                <li>Mejores armas</li>
+                <li>Mejores artefactos</li>
+                <li>Mejores equipos</li>
+                <li>Orden de talentos</li>
+            </ul>
+        </div>
+
+        <img src="Images\Would you play peekaboo with Hu Tao_.png" id="img-list">
+
+    </div>
+
+    <div id="weapons">
+
+        <h1 class="title"> Mejores armas </h1>
+
+        <Div id="Contenedor-cartas">
+            <div class="carta">
+                <H2>Scarlet Sands</H1>
+                    <img src="Images/Mesa de trabajo 4.png" alt="" class="img-carta">
+                    <p>Tercer mejor</p>
+                    <p>El personaje que lo equipa gana un 52% de su Dominio elemental como ATK adicional. Cuando una
+                        Habilidad elemental golpea a un rival, se obtiene el efecto Sueño de las arenas escarlatas
+                        durante 10 s: El personaje que lo equipa obtiene un 28% de su Dominio elemental como
+                        bonificación de ATK. Máximo 3 acumulaciones.</p>
+            </div>
+            <div class="carta">
+                <H2>Baculo de Homa</H1>
+                    <img src="Images/Mesa de trabajo 3.png" alt="" class="img-carta">
+                    <p>Mejor</p>
+                    <p>Los PS aumentan un 20%. Además, proporciona una bonificación de ATK basada en el 0,8% de los PS
+                        máximos del portador. Cuando los PS del portador son inferiores al 50%, esta bonificación ATK
+                        aumenta un 1% adicional de los PS máximos.</p>
+            </div>
+            <div class="carta">
+                <H2>Deathmatch </H1>
+                    <img src="Images/Mesa de trabajo 5.png" alt="" class="img-carta">
+                    <p>Segundo mejor</p>
+                    <p>Cuando cambies a un personaje por esta arma, conservará el tipo de potenciador que tenía cuando
+                        estaba en el campo de batalla. Por lo tanto, si tenías una mejora de DMG del 24% (R1) antes de
+                        cambiar de arma, seguirás conservando ese 24% cuando los demás miembros de tu grupo se acerquen
+                        a un grupo de enemigos.
+                    </p>
+            </div>
+        </Div>
+    </div>
+
+    <div id="calculadora" class="">
+        <h1 class="title centrar espacio"> Calcualdora </h1>
+        <div id="calculadora2">
+            <form class="form-grid" id="formDano">
+                <label for="talent">talent%</label>
+                <input type="text" name="talent" id="talent">
+
+                <label for="atkp">Atk personaje</label>
+                <input type="text" name="atkp" id="atkp">
+
+                <label for="crt">crit rate</label>
+                <input type="text" name="crt" id="crt">
+
+                <label for="crd">crit damage</label>
+                <input type="text" name="crd" id="crd">
+
+                <label for="dmgb">daño bonus</label>
+                <input type="text" name="dmgb" id="dmgb">
+
+                <label for="lvlp">lvl personaje</label>
+                <input type="text" name="lvlp" id="lvlp">
+
+                <label for="lvle">lvl enemigo</label>
+                <input type="text" name="lvle" id="lvle">
+
+                <label for="re">resistencia enemigo</label>
+                <input type="text" name="re" id="re">
+
+                <input type="submit" class="btn" id="btnDano" value="Enviar">
+            </form>
+            <div>
+                <h2> Daño total de
+                    <br> la Habilidad
+                </h2>
+                <p id="dano">0</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="artefactos">
+        <h1 class="title centrar espacio"> Artefactos </h1>
+        <div id="artefactos2">
+            <div id="cont-img-table">
+                <img src="./Images/hutao artefacts.jpeg" id="img-table">
+            </div>
+            <div>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>artefacto</th>
+                    <th>Bonus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+
+                    <td>1.</td>
+                    <td><img src="./Images/bruja.png" alt="">
+                     <p>Bruja escarlata</p>  </td>
+                    <td>2-PC: Pyro DMG Bonus +15%.<br>
+                        <br>
+                        4-PC: Increases Overloaded, Burning, and Burgeon DMG by 40%. Increases Vaporize and Melt DMG by
+                        15%.
+                        Using an Elemental Skill increases 2-Piece Set effects by 50% for 10s. Max 3 stacks.</td>
+
+                </tr>
+                <td>1.</td>
+                <td><img src="./Images/bruja.png" alt="">
+                    <p>Bruja escarlata</p>  </td>
+                <td>2-PC: Pyro DMG Bonus +15%.<br>
+                    <br>
+                    4-PC: Increases Overloaded, Burning, and Burgeon DMG by 40%. Increases Vaporize and Melt DMG by 15%.
+                    Using an Elemental Skill increases 2-Piece Set effects by 50% for 10s. Max 3 stacks.</td>
+
+                </tr>
+                <td>1.</td>
+                <td><img src="./Images/bruja.png" alt="">
+                    <p>Bruja escarlata</p>  </td>
+                <td>2-PC: Pyro DMG Bonus +15%.<br>
+                    <br>
+                    4-PC: Increases Overloaded, Burning, and Burgeon DMG by 40%. Increases Vaporize and Melt DMG by 15%.
+                    Using an Elemental Skill increases 2-Piece Set effects by 50% for 10s. Max 3 stacks.</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</div>
+    
+
+    </div>
+
+</body>
+
+
+</html>
