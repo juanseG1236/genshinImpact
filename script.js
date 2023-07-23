@@ -6,6 +6,22 @@ function calcularPorcentaje(valor) {
 
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('formDano');
+  
+  
+  //funcion cambio de color automatico
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  //funcion calculadora dano
+  
+  
   form.addEventListener('submit', function(event) {
     event.preventDefault();
   

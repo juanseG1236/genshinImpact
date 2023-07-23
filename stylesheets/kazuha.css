@@ -1,0 +1,507 @@
+:root{
+
+    /* paleta hutao */
+    
+    --color-background: #fdfefe
+    ;
+    --color-header: #F2F2F2;
+    --color-text: #342c27 ;
+    --color-strong: #BF1304;
+    --color-primary: #BF1304 ;
+    --color-secondary: #591818 ;
+    --color-ternary: #c8402a  
+    ;
+    
+    
+    }
+    
+    * {
+        font-family: 'Poppins', sans-serif;
+        
+    }
+    
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: var(--color-background);
+        color: var(--color-text);
+    
+    }
+    
+    .title {
+        font-family: 'Poppins';
+        color: var(--color-primary);
+        font-size: xx-large;
+    }
+    
+    
+    
+    
+    header h1 {
+        font-family: 'Poppins';
+        color: var(--color-primary);
+        font-size: xx-large;
+        padding: 0%;
+        margin-top: -10%;
+    }
+    
+    header h2 {
+        font-family: 'Poppins';
+        color: var(--color-primary);
+        font-size: x-large;
+        font-weight: 300;
+        padding: 0%;
+        margin: 1% 0% 0% 0%;
+    }
+    
+    /*//////// navegador ///////////*/
+    
+    header {
+        background-color: var(--color-header);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.1px 0px;
+        width: 100%;
+    
+    }
+    
+    .navbar {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 80px;
+        margin: 0px -10px;
+    }
+    
+    #Logo {
+    
+        margin-top: 2%;
+    
+    }
+    
+    .navbar li {
+        display: inline-block;
+        padding: 10px 20px;
+        position: relative;
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+    }
+    
+    .navbar a::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 0%;
+        height: 3px;
+        background-color: var(--color-primary);
+        transition: width 0.3s ease-out, left 0.3s ease-out, 0.3s ease-out;
+        left: 0;
+    }
+    
+    .navbar a:hover::after {
+        width: 100%;
+        left: 1px;
+        transition-delay: 0.1s
+    }
+    
+    .navbar a::after {
+        transition-delay: 0.1s;
+    }
+    
+    .navbar a:hover {
+        transition-delay: 0.1s;
+    }
+    
+    #Banneri {
+        height: max-content;
+        width: 100%;
+        background-size: cover;
+        background-position: center top;
+        position: relative;
+        top: -40%;
+    
+    
+    }
+    
+    #Banner {
+        height: 80%;
+        overflow: hidden;
+    
+    }
+    
+    .centrar {
+        text-align: center;
+    }
+    
+    .espacio {
+        margin: 5% 0%;
+    }
+    
+    strong {
+        color: var(--color-strong);
+    }
+    
+    ul {
+        font-size: x-large;
+    }
+    
+    li {
+        padding-top: 1%;
+    }
+    
+    #lista {
+        margin-top: 8%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #img-list {
+        height: max-content;
+        width: 100%;
+        background-size: cover;
+        background-position: center top;
+        position: relative;
+        top: -16%;
+        right: 0%;
+    }
+
+    #img-list-container{
+        width: 35%;
+        height: 35rem;
+        overflow: hidden;   
+    }
+
+    #weapons {
+        margin-top: 10%;
+        text-align: center;
+    }
+    
+    #weapons h1 {
+        font-size: xxx-large;
+        font-weight: 500;
+    
+    }
+    
+    
+    
+    #Contenedor-cartas {
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        flex-wrap: wrap;
+        margin: 0% 5%;
+    
+    }
+    
+    .carta {
+    
+        text-align: center;
+        width: 20%;
+        box-shadow: var(--color-primary) 0 2px 5px 0;
+        border-radius: 20px;
+        border: 2px solid var(--color-secondary);
+        padding: 2%;
+        transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
+        background-color: var(--color-background);
+    
+
+    }
+    
+    .carta p {
+        font-size: small;
+        word-wrap: normal;
+    }
+    
+    .carta h2 {
+        margin-top: 1%;
+    }
+    
+    .img-carta {
+        width: 100%;
+        margin: 5% 0%;
+    
+    }
+    
+    .carta:hover {
+        box-shadow: 10px 10px 100px 3px var(--color-primary);
+        transform: scale(1.05) translateZ(0);
+        transition-delay: 0.1s
+    }
+    
+    
+    
+    
+    /*     ///////////////////////calculadora////////////////                */
+    
+    #calculadora h1 {
+        font-size: xxx-large;
+        font-weight: 500;
+    
+    }
+    
+    
+    #calculadora2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    
+    
+    #calculadora2 div {
+        position: relative;
+        top: 25px;
+        text-align: center;
+        justify-content: center;
+        width: 30%;
+    }
+    
+    
+    
+    
+    #calculadora2 h2 {
+        font-size: 200%;
+        font-weight: 600;
+        margin: 0%;
+    
+    
+    
+    }
+    
+    
+    
+    #calculadora2 p {
+        font-size: 400%;
+        font-weight: 500;
+        margin: 0%;
+    
+    }
+    
+    
+    
+    .form-grid {
+        display: grid;
+        width: 40%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+    
+    
+    label {
+        justify-self: center;
+        margin-bottom: 0.5rem;
+        white-space: nowrap;
+    }
+    
+    input[type="text"] {
+        padding: 0rem 0.5rem;
+        font-size: 1rem;
+        border-radius: 0.25rem;
+        border: 1px solid #ccc;
+        justify-self: center;
+    
+    }
+    
+    input[type="submit"] {
+        align-self: center;
+        justify-self: center;
+        grid-column: 1 / 5;
+        /* Define la posición de inicio y final del elemento para que ocupe todo el ancho de la tercera fila */
+        padding: 1% 15%;
+        align-self: center;
+        justify-self: center;
+        grid-column: 1 / 5;
+        /* Define la posición de inicio y final del elemento para que ocupe todo el ancho de la tercera fila */
+        background-color: transparent;
+        border: 1px solid var(--color-primary);
+        border-radius: 8px;
+        box-shadow: var(--color-primary)c8 0 2px 5px 0;
+        box-sizing: border-box;
+        color: var(--color-text);
+        cursor: pointer;
+        font-size: 13px;
+        line-height: 29px;
+        position: relative;
+        text-align: center;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: middle;
+        transition: 0.2s ease-in;
+        margin-top: 10px;
+    
+    
+    }
+    
+    input[type="submit"]:hover {
+        background-color: var(--color-ternary);
+        color: aliceblue;
+    }
+    
+    
+    #artefactos h1 {
+        font-size: xxx-large;
+        font-weight: 500;
+    
+    
+    }
+    
+    
+    #artefactos2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    
+    #artefactos2 div {
+        text-align: center;
+        width: 40%;
+    
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        border-top: none;
+        border-spacing: 0;
+    
+    
+    }
+    
+    
+    th,
+    td {
+        width: 25%;
+        text-align: center;
+        vertical-align: center;
+        padding: 1.5em;
+    }
+    
+    td {
+        border: 1px solid var(--color-ternary);
+        border-top: none;
+        align-items: center;
+    
+    }
+    
+    
+    thead,
+    th {
+        background-color: var(--color-ternary);
+    
+    
+    }
+    
+    thead th:nth-child(1) {
+        width: 7%;
+        padding: 1em;
+    
+    }
+    
+    thead th:nth-child(2) {
+        width: 29%;
+    }
+    
+    thead th:nth-child(3) {
+        width: 70%;
+    }
+    
+    
+    table tr td:nth-child(3) {
+        text-align: left;
+    }
+    
+    
+    
+    
+    #cont-img-table {
+       height: 87vh;
+        width: 60%;
+        overflow: hidden;
+        
+    
+    
+    }
+    
+    #img-table {
+       
+        width: max-content;
+        background-size: cover;
+        position: relative;
+        top: 0%;
+        
+    }
+    
+    #Video{
+    text-align: center;
+    
+    }
+    
+    #video iframe{
+        margin: 0% auto 10% auto;
+    
+    }
+    
+    .centrarP{
+        margin: 0% 20%;
+    }
+    
+    /*//  menu personajes   ///*/
+    
+    
+    #menuP{
+        display: inline-block;
+        position: fixed;
+        z-index: 99 ;
+        margin-left: 1%;
+        bottom: 4%;
+        width: 5%;
+    
+        
+        
+    }
+    
+    #menuP img:hover{
+    transform: scale(1.1);
+    }
+    
+    #menuP img{
+        width: 100%;
+        transition: transform 100ms ease-in;
+        cursor: pointer;
+    
+    
+    
+    }
+    
+    #listamenu{
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.5s ease;
+    
+    
+    }
+    
+    
+    #menuP:hover #listamenu{
+        visibility: visible;
+        opacity: 1;
+    
+    } 

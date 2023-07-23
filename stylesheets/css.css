@@ -1,5 +1,21 @@
+:root{
+
+/* paleta hutao */
+
+--color-background: #07070D;
+--color-header: #07060B;
+--color-text: aliceblue;
+--color-strong: #e00d33;
+--color-primary: #AC2831;
+--color-secondary: #26110F;
+--color-ternary: #3d1818;
+
+
+}
+
 * {
     font-family: 'Poppins', sans-serif;
+    
 }
 
 html,
@@ -7,14 +23,14 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #07070D;
+    background-color: var(--color-background);
     color: aliceblue;
 
 }
 
 .title {
     font-family: 'Poppins';
-    color: #AC2831;
+    color: var(--color-primary);
     font-size: xx-large;
 }
 
@@ -23,7 +39,7 @@ body {
 
 header h1 {
     font-family: 'Poppins';
-    color: #AC2831;
+    color: var(--color-primary);
     font-size: xx-large;
     padding: 0%;
     margin-top: -10%;
@@ -31,19 +47,76 @@ header h1 {
 
 header h2 {
     font-family: 'Poppins';
-    color: #AC2831;
+    color: var(--color-primary);
     font-size: x-large;
     font-weight: 300;
     padding: 0%;
     margin: 1% 0% 0% 0%;
 }
 
+/*//////// navegador ///////////*/
+
 header {
-    background-color: #07060B;
-    padding: 0.1px;
+    background-color: var(--color-header);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.1px 0px;
     width: 100%;
-    display: flexbox;
+
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    gap: 80px;
+    margin: 0px -10px;
+}
+
+#Logo {
+
+    margin-top: 2%;
+
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease-out, left 0.3s ease-out, 0.3s ease-out;
+    left: 0;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    left: 1px;
+    transition-delay: 0.1s
+}
+
+.navbar a::after {
+    transition-delay: 0.1s;
+}
+
+.navbar a:hover {
+    transition-delay: 0.1s;
 }
 
 #Banneri {
@@ -68,11 +141,11 @@ header {
 }
 
 .espacio {
-    margin: 4% 30%;
+    margin: 5% 0%;
 }
 
 strong {
-    color: #e00d33;
+    color: var(--color-strong);
 }
 
 ul {
@@ -120,9 +193,9 @@ li {
 
     text-align: center;
     width: 20%;
-    box-shadow: #ac2831c8 0 2px 5px 0;
+    box-shadow: var(--color-primary)c8 0 2px 5px 0;
     border-radius: 20px;
-    border: 2px solid #26110F;
+    border: 2px solid var(--color-secondary);
     padding: 2%;
     transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
     background-color: #07060B;
@@ -145,62 +218,12 @@ li {
 }
 
 .carta:hover {
-    box-shadow: 10px 10px 100px 3px #ac2831c8;
+    box-shadow: 10px 10px 100px 3px var(--color-primary)c8;
     transform: scale(1.05) translateZ(0);
     transition-delay: 0.1s
 }
 
-.navbar {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-    margin: 0 -10;
-}
 
-#Logo {
-
-    margin-top: 2%;
-
-}
-
-.navbar li {
-    display: inline-block;
-    padding: 10px 20px;
-    position: relative;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: inherit;
-    position: relative;
-}
-
-.navbar a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 0%;
-    height: 3px;
-    background-color: #AC2831;
-    transition: width 0.3s ease-out, left 0.3s ease-out, 0.3s ease-out;
-    left: 0;
-}
-
-.navbar a:hover::after {
-    width: 100%;
-    left: 1px;
-    transition-delay: 0.1s
-}
-
-.navbar a::after {
-    transition-delay: 0.1s;
-}
-
-.navbar a:hover {
-    transition-delay: 0.1s;
-}
 
 
 /*     ///////////////////////calculadora////////////////                */
@@ -261,7 +284,7 @@ li {
 label {
     justify-self: center;
     margin-bottom: 0.5rem;
-    background-color: #26110F;
+    background-color: var(--color-secondary);
     white-space: nowrap;
 }
 
@@ -285,9 +308,9 @@ input[type="submit"] {
     grid-column: 1 / 5;
     /* Define la posición de inicio y final del elemento para que ocupe todo el ancho de la tercera fila */
     background-color: transparent;
-    border: 1px solid #AC2831;
+    border: 1px solid var(--color-primary);
     border-radius: 8px;
-    box-shadow: #ac2831c8 0 2px 5px 0;
+    box-shadow: var(--color-primary)c8 0 2px 5px 0;
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
@@ -306,7 +329,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #26110F;
+    background-color: var(--color-secondary);
 }
 
 
@@ -351,7 +374,7 @@ td {
 }
 
 td {
-    border: 1px solid #AC2831;
+    border: 1px solid var(--color-ternary);
     border-top: none;
     align-items: center;
 
@@ -360,7 +383,7 @@ td {
 
 thead,
 th {
-    background-color: #AC2831;
+    background-color: var(--color-ternary);
 
 
 }
@@ -401,3 +424,66 @@ table tr td:nth-child(3) {
     background-size: cover;
 
 }
+
+#Video{
+text-align: center;
+
+}
+
+#video iframe{
+    margin: 0% auto 10% auto;
+
+}
+
+.centrarP{
+    margin: 0% 20%;
+}
+
+/*//  menu personajes   ///*/
+
+
+#menuP{
+    display: inline-block;
+    position: fixed;
+    z-index: 99 ;
+    margin-left: 1%;
+    bottom: 4%;
+    width: 5%;
+
+    
+    
+}
+
+#menuP img:hover{
+transform: scale(1.1);
+}
+
+#menuP img{
+    width: 100%;
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+
+
+
+}
+
+#listamenu{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+
+
+}
+
+
+#menuP:hover #listamenu{
+    visibility: visible;
+    opacity: 1;
+
+} 
