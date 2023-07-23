@@ -459,51 +459,51 @@
         margin: 0% 20%;
     }
     
-    /*//  menu personajes   ///*/
+   /*//  menu personajes   ///*/
+
+
+#menuP{
+    display: inline-block;
+    position: fixed;
+    z-index: 99 ;
+    margin-left: 1%;
+    bottom: 4%;
+    width: 5%;
+
     
     
-    #menuP{
-        display: inline-block;
-        position: fixed;
-        z-index: 99 ;
-        margin-left: 1%;
-        bottom: 4%;
-        width: 5%;
-    
-        
-        
-    }
-    
-    #menuP img:hover{
-    transform: scale(1.1);
-    }
-    
-    #menuP img{
-        width: 100%;
-        transition: transform 100ms ease-in;
-        cursor: pointer;
-    
-    
-    
-    }
-    
-    #listamenu{
-        position: absolute;
-        bottom: 100%;
-        left: 0;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        visibility: hidden;
-        opacity: 0;
-        transition: all 0.5s ease;
-    
-    
-    }
-    
-    
-    #menuP:hover #listamenu{
-        visibility: visible;
-        opacity: 1;
-    
-    } 
+}
+
+#menuP img:hover{
+transform: scale(1.1);
+}
+
+#menuP img{
+    width: 100%;
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+
+
+
+}
+
+#listamenu{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+
+
+}
+
+
+#menuP:hover #listamenu{
+    visibility: visible;
+    opacity: 1;
+
+} 
